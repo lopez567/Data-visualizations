@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Spencer Lopez | Visualizes Somedata</title>
+  <meta name="description" content="D3 Data Visualizations">
+  <meta name="author" content="Spencer Lopez">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,400" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <svg class="page">
+  <!-- Define star glow filter -->
+  <defs>
+      <filter id="glow" height="130%" width="130%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur"></feGaussianBlur>
+        <feFlood flood-color="#ffffff" flood-opacity="1" result="offsetColor"></feFlood>
+        <feOffset in="blur" dx="0" dy="6" result="offsetBlur"></feOffset>
+        <feComposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlur"></feComposite>
+        <feMerge>
+          <feMergeNode in="offsetBlur"></feMergeNode>
+          <feMergeNode in="SourceGraphic"></feMergeNode>
+        </feMerge>
+      </filter>
+  </svg>
+  <div class="title">
+    <h1>SPENCER LOPEZ</h1>
+    <h2>D3 Data Visualizations</h2>
+  </div>
+  <script src="modules/d3.min.js"></script>
+  <script type="text/javascript" src="stars.js"></script>
+</body>
+</html>
