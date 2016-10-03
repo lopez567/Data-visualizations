@@ -57,24 +57,10 @@ var updateStars = function updateStars(stars) {
         return d.cy;
       })
 
-    // starwars.
-    //   .transition()
-    //   .ease(d3.easeLinear)
-    //   .duration(d => d.duration)
-    //   .attr('cy', d => {
-    //     d.cy += h;
-    //     return d.cy;
-    //   })
-
-
     starwars.exit().remove();
 }
 
 updateStars(stars);
-
-// d3.interval( () => {
-//   updateStars(stars);    
-// },1000)
 
 
 

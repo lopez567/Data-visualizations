@@ -12,7 +12,20 @@
 </head>
 
 <body>
-  <svg class="page">
+  <h1 class='machine-learning-title'>Machine Learning: k-means and k-neighbors</h1>
+  <h2 class='chart-title'>Animals Weights vs Brain Weights</h2>
+  <svg class="chart" height="540px" width="560px">
+  <div class="key">
+    <ul>
+      <li><span class='wolf'>_</span> Grey Wolf </li>
+      <li><span class='monkey'>_</span> Monkey </li>
+      <li><span class='goat'>_</span> Goat </li>
+      <li><span class='kangaroo'>_</span> Kangaroo</li>
+      <li><span class='pig'>_</span> Pig </li>
+      <li><span class='sheep'>_</span> Sheep </li>
+      <li><span class='jaguar'>_</span> Jaguar </li>
+    </ul>
+  </div>
   <!-- Define star glow filter -->
   <defs>
       <filter id="glow" height="130%" width="130%">
@@ -26,12 +39,9 @@
         </feMerge>
       </filter>
   </svg>
-  <div class="title">
-    <h1>SPENCER LOPEZ</h1>
-    <h2>D3 Data Visualizations</h2>
-  </div>
   <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
   <script src="modules/d3.min.js"></script>
-  <script type="text/javascript" src="stars.js"></script>
+  <script type="text/javascript" src="data/AnimalData.js"></script>
+  <script type="text/javascript" src="animals.js"></script>
 </body>
 </html>
