@@ -37,9 +37,7 @@ body {
 }
 
 .chart {
-  display:block;
-  margin-right:auto;
-  margin-left:auto;
+  
 }
 
 .machine-learning-title {
@@ -71,43 +69,47 @@ li span {
 }
 /*The Animals*/
 
-.wolf {
+.animals {
+  fill: white;
+}
+
+.wolf, .a0 {
   fill: #0fffef;
   background-color: #0fffef;
   color: #0fffef;
 }
 
-.monkey {
+.monkey, .a1 {
   fill: #0fff37;
   background-color: #0fff37;
   color: #0fff37;
 }
 
-.pig {
+.pig, .a2 {
   fill: #f3ff0f;
   background-color: #f3ff0f;
   color: #f3ff0f;
 }
 
-.goat {
+.goat, .a3 {
   fill: #f43607;
   background-color: #f43607;
   color: #f43607;
 }
 
-.sheep {
+.sheep, .a4 {
   fill: #f47a07;
   background-color: #f47a07;
   color: #f47a07;
 }
 
-.jaguar {
+.jaguar, .a5 {
   fill: #f407e1;
   background-color: #f407e1;
   color: #f407e1;
 }
 
-.kangaroo {
+.kangaroo, .a6 {
   fill: #4e07f4;
   background-color: #4e07f4;
   color: #4e07f4;
@@ -121,5 +123,21 @@ li span {
 .guess {
   stroke: white;
   stroke-width: 2;
+}
+
+.cluster {
+  opacity: .7;
+}
+
+.key {
+  width: 200px;
+}
+
+.key h3 {
+  text-align: center;
+}
+
+.buttons {
+  width:200px;
 }
 

@@ -13,9 +13,9 @@
 
 <body>
   <h1 class='machine-learning-title'>Machine Learning: k-means and k-neighbors</h1>
-  <h2 class='chart-title'>Animals Weights vs Brain Weights</h2>
-  <svg class="chart" height="540px" width="560px">
+  <h2 class='chart-title'>Animals Weights (kg) vs Brain Weights (g)</h2>
   <div class="key">
+    <h3>Animal Key</h3>
     <ul>
       <li><span class='wolf'>_</span> Grey Wolf </li>
       <li><span class='monkey'>_</span> Monkey </li>
@@ -25,6 +25,12 @@
       <li><span class='sheep'>_</span> Sheep </li>
       <li><span class='jaguar'>_</span> Jaguar </li>
     </ul>
+  </div>
+  <svg class="chart" height="540px" width="560px">
+  <div class="buttons">
+    <button id="guess">Guess a New Animal's Species</button>
+    <button id="cluster">Cluster Some Species</button>
+    <button id="reset">Reset the Graph</button>
   </div>
   <!-- Define star glow filter -->
   <defs>
